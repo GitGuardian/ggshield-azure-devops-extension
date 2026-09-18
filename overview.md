@@ -45,6 +45,15 @@ variables:
   ggshieldScanScope: repository
 ```
 
+### Skip the Automatic Scan
+
+When the extension is installed, a decorator injects the scan at the start of every agent job. Set the `skipGGShield` pipeline variable to opt out:
+
+```yaml
+variables:
+  skipGGShield: true
+```
+
 ### Set Up a Service Connection
 
 1. Configure a new service connection in your Azure DevOps project settings
